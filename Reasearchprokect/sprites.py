@@ -9,18 +9,17 @@ vec = pg.math.Vector2
 
 # player class
 
-game_folder = (__file__)
-img_folder = (game_folder, "Doodle jump.jpg")
-
 class Player(Sprite):
-    def __init__(self, game):
+    def __init__(self, game, x, y):
         Sprite.__init__(self)
         # these are the properties
         self.game = game
-        self.player = img_folder
-        player_img = "Doodle jump.jpg"
-        self.image = pg.transform.scale(game.player_img, (64,64))
+        self.image = pg.transform.scale(self.game.player_img, (64,64))
+        self.image.set_colorkey
         self.rect = self.image.get_rect()
+        self.vx, self.vy = 0, 0
+        self.x = x * 64
+        self.y = y * 64
         self.rect.center = (WIDTH/2, HEIGHT/2)
         self.pos = vec(WIDTH/2, HEIGHT/2)
         self.vel = vec(0,0)
