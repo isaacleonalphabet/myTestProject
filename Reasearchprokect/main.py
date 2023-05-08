@@ -105,6 +105,10 @@ class Game:
 
         self.screen.fill(BLUE)
         self.draw_text("GAME ON", 100, BLACK, WIDTH/2, HEIGHT/2)
+
+        pg.time.Clock == 2
+
+    
         self.all_sprites.draw(self.screen)
         # Winning = I am on a platform 
 
@@ -114,9 +118,14 @@ class Game:
             #This says that as long as I am on a platform I am winning 
         if self.win == pg.sprite.spritecollide(self.player, self.platforms, False):
             self.draw_text("KEEP SURVIVING!", 24, BLACK, WIDTH/2, HEIGHT/2)
+
+            pg.time.Clock() == 2
+
              # Winning = I am on a platform 
         if not self.win == (self.player, self.platforms, False):
             self.draw_text("YOU LOSE", 50, RED, WIDTH/2, HEIGHT/2)
+
+            pg.time.Clock() == 2 
         
 
         # This says as long as I am not on a platform, I am loosing or I just lost ebcuase the platforms on the bottom will dissappear

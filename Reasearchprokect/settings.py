@@ -22,4 +22,4 @@ PLATFORM_LIST = [(0, HEIGHT - 40, WIDTH, 40, RED, "normal"),
                  (125, HEIGHT - 350, 100, 5, (200,200,200), "disappearing "),
 # The platform on the right states that there is an opneining on the left side of the game 
 # Disappearing = when I touvh it, it will magicaly disapear from existence. 
-                 (350, 200, 100, 20, (200,200,200), "normal"), (100, HEIGHT - 100, WIDTH, 10, BLACK, "disappearing")]
+                 (350, 200, 100, 20, (200,200,200), "normal"), (100, HEIGHT - 100, WIDTH, 10, BLACK, "normal"), (600, HEIGHT - 400, WIDTH, 10, BLACK, "bouncey")]
